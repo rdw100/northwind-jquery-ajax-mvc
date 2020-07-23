@@ -16,6 +16,6 @@ Instructions to setup this demo are as follows:
     "DevConnection": "Server=(localdb)\\mssqllocaldb;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=true"
     } ```
 
-**Demonstration**
+### Demonstration
 Create, Read, Update, and Delete operations are performed in the animated GIF below:
 ![Recordit GIF](https://github.com/rdw100/NorthwindJqueryAjaxMvc/blob/master/NorthwindJqueryAjaxMvc/wwwroot/img/KuFnlNRSM3.gif?raw=true?raw=true)
