@@ -18,4 +18,4 @@ Instructions to setup this demo are as follows:
 
 ** Demonstration **
 Create, Read, Update, and Delete operations are performed in the animated GIF below:
-![Recordit GIF](https://github.com/rdw100/NorthwindJqueryAjaxMvc/blob/master/NorthwindJqueryAjaxMvc/img/KuFnlNRSM3.gif?raw=true)
+![Recordit GIF](https://github.com/rdw100/NorthwindJqueryAjaxMvc/blob/master/NorthwindJqueryAjaxMvc/wwwroot/img/KuFnlNRSM3.gif?raw=true?raw=true)
