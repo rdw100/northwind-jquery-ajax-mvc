@@ -1,0 +1,45 @@
+﻿@model IEnumerable<NorthwindJqueryAjaxMvc.Models.Shipper>
+
+    <h1 class="text-center">
+        <i class="fas fa-shipping-fast"></i>
+        <i>Shippers</i>
+    </h1>
+
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CompanyName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th>
+                    <a onclick="getShipper('@Url.Action("AddOrEdit","Shipper",new {id = 0},Context.Request.Scheme)','New Shipper')" class="btn btn-success text-white"><i class="fas fa-plus"></i> New Shipper</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td>
+                        <div>
+                            <a onclick="getShipper('@Url.Action("AddOrEdit","Shipper",new {id = item.ShipperId},Context.Request.Scheme)', 'Update Shipper')" class="btn btn-primary text-white"><i class="fas fa-pencil-alt"></i> Edit</a>
+                            <form asp-action="Delete" asp-route-id="@item.ShipperId" onsubmit="return deleteShipper(this)" class="d-inline">
+                                <button class="btn btn-danger" type="submit">
+                                    <i class="fas fa-times"></i> Delete
+                                </button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
